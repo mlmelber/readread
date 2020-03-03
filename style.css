@@ -49,7 +49,7 @@ p {
 
  
 
-  p:nth-of-type(5n); p:nth-of-type(7n){
+  p:nth-of-type(5n), p:nth-of-type(7n){
       padding-right: 0vw;
       padding-left: 20vw;
   }
@@ -74,7 +74,6 @@ table {
 
 h1, h2, h4, h5 {
     text-align: center;
-    font-family: 'Lato' ;
 }
 
 h1 {
@@ -92,6 +91,7 @@ img {
     width: 50vw;
     margin: auto;
     display: block;
+    max-width: 100%;
     margin-top: 0;
     margin-bottom: 100px;
 }
@@ -102,10 +102,15 @@ img {
     margin-bottom: 27px; // = 1 × 27px
   }
   
-  .asterism {
+  p.asterism {
       text-indent: 0;
+      padding-left: 0;
       text-align: center;
       line-height: normal;
       margin-top: auto;
       margin-bottom: auto;
+  }
+
+  .poem {
+      text-align: left;
   }
