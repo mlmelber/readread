@@ -17,7 +17,7 @@ blockquote p {
   
 
 p+p {
-    text-indent: 1em;
+    text-indent: 2.2em;
 }
 
 ul, ol {
@@ -27,6 +27,8 @@ ul, ol {
 
 p {
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
     line-height: 20px;
     max-width: 70vw;
@@ -35,13 +37,31 @@ p {
   p {
     font-size: 16px;
     line-height: 25px;
-    max-width: 750px;
+    max-width: 55vw;
   }
 
+  h2 + p::first-letter {
+    font-size: 2em;
+    /*font-size:4em;
+    initial-letter: 1.5;
+    float: left; */
+}
+
+ 
+
+  p:nth-of-type(5n); p:nth-of-type(7n){
+      padding-right: 0vw;
+      padding-left: 20vw;
+  }
+
+  p:nth-child(3n), p:nth-child(6n){
+      padding-right: 0vw;
+      padding-left: 10vw;
+  }
+
+
 pre {
-    font-family: 'Lato' ;
-    text-align: center;
-    font-size: 10px;
+    display: none;
 }
 
 table {
@@ -52,9 +72,19 @@ table {
     margin-bottom: 30px;
 }
 
-h1, h2, h4 {
+h1, h2, h4, h5 {
     text-align: center;
     font-family: 'Lato' ;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+}
+
+h5 {
+    font-size: larger;
+    margin-top: 40px;
 }
 
 
@@ -62,10 +92,20 @@ img {
     width: 50vw;
     margin: auto;
     display: block;
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
 * {
     line-height: 27px;
     margin-top: 0;
     margin-bottom: 27px; // = 1 × 27px
+  }
+  
+  .asterism {
+      text-indent: 0;
+      text-align: center;
+      line-height: normal;
+      margin-top: auto;
+      margin-bottom: auto;
   }
