@@ -4,11 +4,26 @@ body {
     background-color: lightcyan;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans' ;
+    font-family: 'Caladea', serif;
 
     font-size: 16px;
     
 }
+
+
+blockquote p {
+    hanging-punctuation: first;
+  }
+  
+
+p+p {
+    text-indent: 1em;
+}
+
+ul, ol {
+    padding-left: 0;
+    list-style-position: outside;
+  }
 
 p {
     margin: 0 auto;
@@ -17,19 +32,40 @@ p {
     max-width: 70vw;
   }
 
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 750px;
+  }
+
 pre {
     font-family: 'Lato' ;
     text-align: center;
     font-size: 10px;
 }
 
+table {
+    font-family: 'Caladea', serif;
+    font-size: smaller;
+    line-height: 10px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
 h1, h2, h4 {
     text-align: center;
-    font-family: 'Caladea' ;
+    font-family: 'Lato' ;
 }
+
 
 img {
     width: 50vw;
     margin: auto;
     display: block;
 }
+
+* {
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 27px; // = 1 × 27px
+  }
