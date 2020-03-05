@@ -10,6 +10,23 @@ body {
     
 }
 
+a:hover {
+    color: hotpink;
+}
+
+tr:last-of-type td{
+    padding-bottom: 120px;
+}
+
+p > i {
+    background-color: lightcoral;
+}
+
+.chapter h2 {
+    border-bottom: 2px solid black;
+    width: 20vw;
+    margin: auto;
+}
 
 blockquote p {
     hanging-punctuation: first;
@@ -18,6 +35,18 @@ blockquote p {
 
 p+p {
     text-indent: 2.2em;
+}
+
+h4 ~ hr {
+    display: none;
+}
+
+h2 ~ hr {
+    display: none;
+}
+
+p:first-child {
+    font-family: ;
 }
 
 ul, ol {
@@ -60,7 +89,11 @@ p {
   }
 
 
-pre {
+pre:first-child {
+    display: none;
+}
+
+pre:last-of-type {
     display: none;
 }
 
@@ -85,6 +118,7 @@ h5 {
     font-size: larger;
     margin-top: 40px;
 }
+
 
 
 img {
@@ -114,3 +148,126 @@ img {
   .poem {
       text-align: left;
   }
+
+  /* ----------- SMART PHONES ----------- */
+@media only screen and (max-width: 800px) {
+    p{
+        margin: auto;
+            margin-top: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+        padding: 0;
+            padding-top: 0;
+            padding-right: 0vw;
+            padding-bottom: 0;
+            padding-left: 0;
+        font-size: .75em;
+        color: black;
+        font-family: 'Grenze', serif;
+        width: 80vw;
+        max-width: 600px;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+    }
+    p::first-letter {
+        font-size: 2em;
+    }
+    
+    p:nth-of-type(5n), p:nth-of-type(6n){
+        padding-right: 0vw;
+        padding-left: 0vw;
+        margin-bottom: 70px;
+    }
+
+    .footnote, .fnanchor{
+        display: none;
+    } 
+
+    h4{
+        width: 400px;
+    }
+
+    .chapter h2 {
+        border-bottom: 2px solid black;
+        width: 40vw;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    h1, h2, h4, h5 {
+        text-align: center;
+        font-size: 1.2em;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    
+    h5 {
+        font-size: larger;
+        margin-top: 40px;
+    }
+}
+
+/* ----------- TABLETS ----------- */
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    p{
+        margin: auto;
+            margin-top: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+        padding: 0;
+            padding-top: 0;
+            padding-right: 30vw;
+            padding-bottom: 0;
+            padding-left: 0;
+        font-size: .9em;
+        color: black;
+        font-family: 'Grenze', serif;
+        width: 60vw;
+        max-width: 600px;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+    }
+    p::first-letter {
+        font-size: 2em;
+    }
+    
+    .chapter h2 {
+        border-bottom: 2px solid black;
+        width: 30vw;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    h1, h2, h4, h5 {
+        text-align: center;
+        font-size: 1.3em;
+        margin: auto;
+    }
+    
+    h4 {
+        margin-top: 8px;
+    }
+
+    h1 {
+        font-size: 2.3em;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    p:nth-of-type(5n), p:nth-of-type(6n){
+        padding-right: 0vw;
+        padding-left: 30vw;
+        margin-bottom: 70px;
+    }
+
+    .footnote, .fnanchor{
+        display: none;
+    } 
+}
